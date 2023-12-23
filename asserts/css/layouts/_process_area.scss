@@ -1,0 +1,54 @@
+
+.process_area {
+    .process {
+        .process_top {
+            text-align: center;
+
+            h3 {
+                padding-bottom: 10px;
+            }
+
+            p {
+                font-size: 13px;
+                font-weight: 300;
+                padding: 15px 0;
+            }
+        }
+
+        .process_bottom {
+            display: flex;
+
+            .single_process {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                i {
+                    border: 1px solid var(--light2);
+                    padding: 15px;
+                    font-size: 18px;
+                    color: var(--secondary);
+                    border-radius: 50%;
+                    border-color: var(--secondary);
+                }
+
+                h3 {
+                    text-transform: capitalize;
+                    padding: 15px 0;
+                }
+
+                p {
+                    font-size: 13px;
+                    font-weight: 300;
+                    color: var(--light2);
+                    width: 80%;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+    }
+
+
+}
+

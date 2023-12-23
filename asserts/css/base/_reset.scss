@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif, 'roboto', 'lato' !important;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 22px;
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+    list-style-type: none;
+    transition: all 0.3s;
+}
+
+:root {
+    --light: #E9EAE9;
+    --light2: #B89B9A;
+    --dark: #55394C;
+    --primary: #EA663F;
+    --secondary: #E5A058;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+ul {
+    list-style: none;
+}
+
+.text_box1 {
+    width: 50%;
+    margin: 0 auto !important;
+    font-size: 14px;
+    margin-bottom: 40px !important;
+}
+
+.tboxp {
+
+    width: 100%;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+
+}
+
+
+/*bacground for img*/
+.bg {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    height: 35vh;
+
+    &::before {
+        position: absolute;
+        content: '';
+        background-color: var(--dark);
+        width: 100%;
+        height: 100%;
+        opacity: 40%;
+        z-index: -1;
+        left: 0;
+        top: 0;
+    }
+}
+
+/*title box brefore after*/
+.tb {
+    text-align: center;
+    position: relative;
+    font-weight: 800;
+    text-transform: capitalize;
+
+    &::before {
+        position: absolute;
+        content: '';
+        border-bottom: 3px solid red;
+        width: 60px;
+        bottom: 0;
+        transform: translate(-50%);
+        left: 50%;
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        border-bottom: 2px solid orange;
+        width: 40px;
+        bottom: -5px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}

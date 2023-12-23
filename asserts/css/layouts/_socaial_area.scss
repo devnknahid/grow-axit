@@ -1,0 +1,42 @@
+.socaial_area {
+    background-color: var(--llight2);
+
+    .social {
+        box-shadow: 0px -3px 9px 0 var(--dark);
+
+        .media {
+            display: flex;
+            flex-direction: column;
+
+            h4 {
+                text-transform: capitalize;
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 13px;
+                line-height: 15px;
+                font-weight: 400;
+            }
+        }
+
+        .social_icon {
+            display: flex;
+            justify-content: end;
+
+            a {
+                flex-basis: 10%;
+
+                i {
+                    font-size: 35px;
+                    color:var(--light2);
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: var(--secondary);
+                    }
+                }
+            }
+        }
+    }
+}

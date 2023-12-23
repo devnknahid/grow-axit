@@ -1,0 +1,35 @@
+.main_area {
+    .header_area {
+        .header {
+            color: var(--light);
+            background-color: var(--dark);
+
+            .logo {
+                h3 {
+                    a {
+                        color: var(--light);
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .menu {
+                .ul {
+                    li {
+                        margin-left: 15px;
+
+                        a {
+                            text-transform: capitalize;
+                            color: var(--light2);
+                            transition: 0.3s;
+
+                            &:hover {
+                                color: var(--light);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

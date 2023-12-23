@@ -1,0 +1,41 @@
+.testimonial_area {
+    .testimonial {
+        .title_box {
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        .testimonials {
+            display: flex;
+
+            .single_testimonial {
+                margin-top: 20px;
+
+                p {
+                    width: 75%;
+                    background-color: var(--light2);
+                    color: var(--light2);
+                    padding: 10px;
+                    margin-bottom: 20px;
+                }
+
+                .person {
+                    display: flex;
+                    align-items: center;
+
+                    img {}
+
+                    h3 {
+                        margin-left: 20px;
+
+                        span {
+                            display: block;
+                            font-size: 13px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
