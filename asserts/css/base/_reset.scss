@@ -31,6 +31,47 @@ body {
     --hover: #F09B81;
 }
 
+.dark {
+    // --light: #323232 !important;
+    background-color: #323232;
+
+    .title,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    li {
+        color: #F3F5F4;
+    }
+
+
+
+    .feature_area1,
+    .feature_area3,
+    .single_price,
+    .box {
+        background-color: #323232 !important;
+    }
+
+    .dark {
+        background: none !important;
+    }
+
+    .feature1_left {
+        .ul {
+            li {
+                a {
+                    background: none !important;
+                }
+            }
+        }
+    }
+
+}
+
 dl,
 ol,
 ul {
@@ -87,7 +128,7 @@ ul {
     background-position: center;
     background-size: cover;
     z-index: 1;
-    height: 35vh;
+    height: 80vh;
 
     &::before {
         position: absolute;
