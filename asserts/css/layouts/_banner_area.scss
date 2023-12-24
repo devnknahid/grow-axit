@@ -2,116 +2,119 @@
     height: 500px !important;
 }
 
-.banner_area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main_area {
 
-    .banner {
-        color: var(--light);
+    .banner_area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        .banner_left {
-            h1 {
-                text-transform: capitalize;
-                font-size: 50px;
+        .banner {
+            color: var(--light);
+
+            .banner_left {
+                h1 {
+                    text-transform: capitalize;
+                    font-size: 50px;
+                }
+
+                h4 {
+                    text-transform: capitalize;
+                    font-size: 16px;
+                    font-weight: 500;
+                    padding: 35px 0 0 0;
+                }
+
+                p {
+                    width: 65%;
+                    padding: 20px 0;
+                    font-size: 13px;
+                    font-weight: 300;
+                }
+
+                a {
+                    #submit {
+                        outline: 0;
+                        border: 0;
+                        border-radius: 3px;
+                        background-color: var(--primary);
+                        color: var(--dark);
+                        padding: 10px 20px;
+                        cursor: pointer;
+                        transition: 0.3s;
+
+                        &:hover {
+                            background-color: var(--secondary);
+                        }
+                    }
+                }
+            }
+        }
+
+        .banner_right {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: var(--light);
+            padding: 20px;
+            width: 280px;
+            height: 260px;
+
+            h3 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: var(--light2);
+                color: var(--dark);
+                width: 277px;
+                height: 50px;
+                text-align: center;
+                padding: 10px;
+
+                span {
+                    color: var(--secondary);
+                }
             }
 
-            h4 {
-                text-transform: capitalize;
-                font-size: 16px;
-                font-weight: 500;
-                padding: 35px 0 0 0;
-            }
+            form {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
 
-            p {
-                width: 65%;
-                padding: 20px 0;
-                font-size: 13px;
-                font-weight: 300;
+
+                input {
+                    outline: 0;
+                    border-top: 0;
+                    border-left: 0;
+                    border-right: 0;
+                    padding: 5px;
+                    width: 240px;
+                    border-bottom-color: var(--light2);
+                    margin: 0 auto;
+                    margin-top: 14px;
+                }
+
             }
 
             a {
                 #submit {
-                    outline: 0;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background-color: var(--secondary);
+                    color: var(--light);
+                    width: 100%;
                     border: 0;
-                    border-radius: 3px;
-                    background-color: var(--primary);
-                    color: var(--dark);
-                    padding: 10px 20px;
+                    padding: 10px 0;
                     cursor: pointer;
                     transition: 0.3s;
 
                     &:hover {
                         background-color: var(--secondary);
                     }
-                }
-            }
-        }
-    }
-
-    .banner_right {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-color: var(--light);
-        padding: 20px;
-        width: 280px;
-        height: 260px;
-
-        h3 {
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: var(--light2);
-            color: var(--dark);
-            width: 277px;
-            height: 50px;
-            text-align: center;
-            padding: 10px;
-
-            span {
-                color: var(--secondary);
-            }
-        }
-
-        form {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            position: absolute;
-            top: 60px;
-
-
-            input {
-                outline: 0;
-                border-top: 0;
-                border-left: 0;
-                border-right: 0;
-                padding: 5px;
-                width: 240px;
-                border-bottom-color: var(--light2);
-                margin: 0 auto;
-                margin-top: 14px;
-            }
-
-        }
-
-        a {
-            #submit {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                background-color: var(--secondary);
-                color: var(--light);
-                width: 100%;
-                border: 0;
-                padding: 10px 0;
-                cursor: pointer;
-                transition: 0.3s;
-
-                &:hover {
-                    background-color: var(--secondary);
                 }
             }
         }

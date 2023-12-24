@@ -9,7 +9,7 @@
 
         .header {
             color: var(--light);
-            background-color: var(--dark);
+            background-color: var(--primary);
 
             .logo {
                 h3 {
@@ -31,11 +31,11 @@
 
                         a {
                             text-transform: capitalize;
-                            color: var(--light2);
+                            color: var(--light);
                             transition: 0.3s;
 
                             &:hover {
-                                color: var(--light);
+                                color: var(--hover);
                             }
                         }
                     }

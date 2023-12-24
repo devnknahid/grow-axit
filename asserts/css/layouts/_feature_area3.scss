@@ -1,28 +1,30 @@
+.main_area {
 
-.feature_area3 {
-    background-color: var(--light);
+    .feature_area3 {
+        background-color: var(--light);
 
-    .feature3 {
-        .feature3_left {
-            h3 {
-                text-transform: capitalize;
-                font-size: 20px;
+        .feature3 {
+            .feature3_left {
+                h3 {
+                    text-transform: capitalize;
+                    font-size: 20px;
+                }
+
+                p {
+                    width: 70%;
+                    font-size: 13px;
+                }
+
+                .p1 {
+                    padding: 20px 0;
+                }
+
+                .feature3_right {
+                    img {}
+                }
+
             }
-
-            p {
-                width: 70%;
-                font-size: 13px;
-            }
-
-            .p1 {
-                padding: 20px 0;
-            }
-
-            .feature3_right {
-                img {}
-            }
-
         }
     }
-}
 
+}

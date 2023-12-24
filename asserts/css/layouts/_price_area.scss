@@ -1,98 +1,100 @@
+.main_area {
 
-.price_area {
-    background-color: var(--light2);
+    .price_area {
+        background-color: var(--secondary);
 
-    .price {
-        .title_box {
-            text-align: center;
-        }
-
-        .prices {
-            padding-top: 35px;
-            display: flex;
-            justify-content: center;
-
-            .single_price {
-                height: 400px;
-                width: 230px;
+        .price {
+            .title_box {
                 text-align: center;
-                background-color: var(--light);
-                margin-left: 15px;
+            }
 
-                .box {
-                    color: var(--light2);
-                    background-color: var(--light2);
-                    padding: 10px 0 0;
-                    position: relative;
-                    height: 45%;
+            .prices {
+                padding-top: 35px;
+                display: flex;
+                justify-content: center;
 
-                    h3 {
-                        border-bottom: 1px solid var(--light2);
-                        padding-bottom: 10px;
-                    }
+                .single_price {
+                    height: 400px;
+                    width: 230px;
+                    text-align: center;
+                    background-color: var(--light);
+                    margin-left: 15px;
 
-                    .p1 {
-                        font-size: 50px;
-                        font-weight: 700;
-                        padding: 30px 0 10px 0;
+                    .box {
+                        color: var(--light);
+                        background-color: var(--light);
+                        padding: 10px 0 0;
+                        position: relative;
+                        height: 45%;
 
-                        span {
-                            font-size: 20px;
-                            font-weight: 400;
+                        h3 {
+                            border-bottom: 1px solid var(--light);
+                            padding-bottom: 10px;
                         }
+
+                        .p1 {
+                            font-size: 50px;
+                            font-weight: 700;
+                            padding: 30px 0 10px 0;
+
+                            span {
+                                font-size: 20px;
+                                font-weight: 400;
+                            }
+                        }
+
+                        .p2 {
+                            font-size: 13px;
+                            font-style: italic;
+                            color: var(--light);
+                            padding-bottom: 15px;
+                            position: absolute;
+                            width: 100%;
+                            bottom: 0px;
+
+                        }
+
+                        .mp {
+                            position: absolute;
+                            width: 100%;
+                            bottom: 25px;
+                        }
+
+                        .p3 {
+                            background-color: var(--secondary);
+                            height: 5px;
+                            width: 100%;
+                            position: absolute;
+                            bottom: 0;
+
+                        }
+
+
+                        .omp {
+                            background-color: var(--secondary);
+                            padding: 5px 0;
+                            position: absolute;
+                            bottom: 0;
+                            width: 100%;
+                        }
+
                     }
 
-                    .p2 {
-                        font-size: 13px;
-                        font-style: italic;
-                        color: var(--light2);
-                        padding-bottom: 15px;
-                        position: absolute;
-                        width: 100%;
-                        bottom: 0px;
+                    .ul {
+                        padding: 20px 0 0 0;
+                        display: flex;
+                        flex-direction: column;
 
-                    }
-
-                    .mp {
-                        position: absolute;
-                        width: 100%;
-                        bottom: 25px;
-                    }
-
-                    .p3 {
-                        background-color: var(--secondary);
-                        height: 5px;
-                        width: 100%;
-                        position: absolute;
-                        bottom: 0;
-
-                    }
-
-
-                    .omp {
-                        background-color: var(--secondary);
-                        padding: 5px 0;
-                        position: absolute;
-                        bottom: 0;
-                        width: 100%;
-                    }
-
-                }
-
-                .ul {
-                    padding: 20px 0 0 0;
-                    display: flex;
-                    flex-direction: column;
-
-                    li {
-                        margin-bottom: 10px;
-                        text-transform: uppercase;
-                        font-weight: 400;
-                        color: var(--light2);
+                        li {
+                            margin-bottom: 10px;
+                            text-transform: uppercase;
+                            font-weight: 400;
+                            color: var(--light);
+                        }
                     }
                 }
             }
         }
     }
-}
 
+}
