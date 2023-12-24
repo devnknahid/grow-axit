@@ -2037,6 +2037,9 @@ p {
 .main_area .header_area .header .menu .ul li a:hover {
   color: var(--hover);
 }
+.main_area .header_area .header .menu .ul .dark {
+  background: none !important;
+}
 .main_area .header_area .header .menu .ul #mode {
   display: flex;
   justify-content: center;
