@@ -44,6 +44,12 @@ ul {
     margin: 0 auto;
 }
 
+button {
+    color: var(--light) !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+}
+
 img {
     max-width: 100%;
     vertical-align: middle;

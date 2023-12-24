@@ -11,12 +11,12 @@
                 a {
 
                     i {
-                        color: var(--light2);
+                        color: var(--light);
                         margin-left: 15px;
                         transition: 0.3s;
 
                         &:hover {
-                            color: var(--light);
+                            color: var(--light2);
                         }
 
                     }
@@ -29,7 +29,7 @@
             p {
                 display: flex;
                 justify-content: center;
-                color: var(--light2);
+                color: var(--light);
                 text-transform: capitalize;
                 font-size: 13px;
                 font-weight: normal;

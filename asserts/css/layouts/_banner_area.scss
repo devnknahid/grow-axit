@@ -1,7 +1,3 @@
-.bg {
-    height: 500px !important;
-}
-
 .main_area {
 
     .banner_area {
@@ -13,6 +9,8 @@
             color: var(--light);
 
             .banner_left {
+                text-align: center;
+
                 h1 {
                     text-transform: capitalize;
                     font-size: 50px;
@@ -22,11 +20,9 @@
                     text-transform: capitalize;
                     font-size: 16px;
                     font-weight: 500;
-                    padding: 35px 0 0 0;
                 }
 
                 p {
-                    width: 65%;
                     padding: 20px 0;
                     font-size: 13px;
                     font-weight: 300;
@@ -57,23 +53,25 @@
             flex-direction: column;
             justify-content: center;
             background-color: var(--light);
-            padding: 20px;
+            padding: 10px 0;
             width: 280px;
             height: 260px;
+            align-items: center;
 
             h3 {
                 position: absolute;
                 top: 0;
                 left: 0;
-                background-color: var(--light2);
-                color: var(--dark);
-                width: 277px;
+                background-color: var(--primary);
+                color: var(--light);
                 height: 50px;
+                width: 100%;
                 text-align: center;
                 padding: 10px;
+                font-size: 20px;
 
                 span {
-                    color: var(--secondary);
+                    color: var(--dark);
                 }
             }
 
