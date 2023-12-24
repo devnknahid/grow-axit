@@ -16,17 +16,22 @@ dark.addEventListener('click', () => {
 // topBtn
 const topA = document.querySelector('.top');
 const topBtn = document.querySelector('.goTop');
-topBtn.addEventListener('click', () => {
-   top.setAttribute('href', '#home');
-});
 window.addEventListener('scroll', () => {
    if (window.scrollY >= 100) {
       topBtn.classList.add('activeTop');
-      header.classList.add('activeheader');
    } else {
       topBtn.classList.remove('activeTop');
-      header.classList.remove('activeheader');
-
-
    }
+   if (window.innerWidth > 768) {
+      if (window.scrollY >= 100) {
+         header.classList.add('activeheader');
+      } else {
+         header.classList.remove('activeheader');
+      }
+   }
+
 });
+
+if (window.innerWidth <= 768) {
+
+}

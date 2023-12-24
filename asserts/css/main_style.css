@@ -40,7 +40,8 @@ ul {
 }
 
 .container {
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -173,6 +174,19 @@ p {
 }
 
 /*header_area start*/
+.main_area .header_area #showNav {
+  position: fixed;
+  width: 50px;
+  height: 35px;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  background-color: var(--primary);
+}
+.main_area .header_area #showNav span {
+  color: var(--light);
+  font-size: 20px;
+}
 .main_area .header_area .activeheader {
   position: fixed;
   top: 0;
@@ -180,8 +194,17 @@ p {
   z-index: 999;
 }
 .main_area .header_area .header {
+  position: fixed;
+  left: 0;
+  top: 40px;
+  width: 70px;
+  z-index: 999;
+  height: 65vh;
   color: var(--light);
   background-color: var(--primary);
+}
+.main_area .header_area .header .container {
+  height: 100%;
 }
 .main_area .header_area .header .logo h3 a {
   color: var(--light);

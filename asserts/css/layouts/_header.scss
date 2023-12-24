@@ -1,5 +1,20 @@
 .main_area {
     .header_area {
+        #showNav {
+            position: fixed;
+            width: 50px;
+            height: 35px;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            background-color: var(--primary);
+
+            span {
+                color: var(--light);
+                font-size: 20px;
+            }
+        }
+
         .activeheader {
             position: fixed;
             top: 0;
@@ -8,8 +23,18 @@
         }
 
         .header {
+            position: fixed;
+            left: 0;
+            top: 40px;
+            width: 70px;
+            z-index: 999;
+            height: 65vh;
             color: var(--light);
             background-color: var(--primary);
+
+            .container {
+                height: 100%;
+            }
 
             .logo {
                 h3 {
