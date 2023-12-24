@@ -44,7 +44,7 @@ body {
 .dark h5,
 .dark h6,
 .dark li {
-  color: #F3F5F4;
+  color: #F3F5F4 !important;
 }
 .dark .feature_area1,
 .dark .feature_area3,
@@ -2412,6 +2412,13 @@ p {
 
 /*price_area end*/
 /*testimonial_area start*/
+.main_area .testimonial_area .testimonial .owl-stage-outer {
+  width: 100%;
+}
+.main_area .testimonial_area .testimonial .owl-nav,
+.main_area .testimonial_area .testimonial .owl-dots {
+  display: none;
+}
 .main_area .testimonial_area .testimonial .title_box {
   text-align: center;
   padding-bottom: 15px;
@@ -2421,12 +2428,17 @@ p {
 }
 .main_area .testimonial_area .testimonial .testimonials .single_testimonial {
   margin-top: 20px;
+  text-align: center;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .main_area .testimonial_area .testimonial .testimonials .single_testimonial p {
-  background-color: var(--light2);
-  color: var(--light2);
+  color: var(--dark);
   padding: 10px;
   margin-bottom: 20px;
+  width: 85%;
 }
 .main_area .testimonial_area .testimonial .testimonials .single_testimonial .person {
   display: flex;

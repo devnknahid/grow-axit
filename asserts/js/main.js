@@ -1,3 +1,21 @@
+$('.owl-carousel').owlCarousel({
+   autoplay: true,
+   loop: true,
+   margin: 10,
+   nav: true,
+   smartSpeed: 500,
+   responsive: {
+      0: {
+         items: 1
+      },
+      600: {
+         items: 2
+      },
+      1000: {
+         items: 3
+      }
+   }
+})
 // dark
 const mainArea = document.querySelector('.main_area');
 const header = document.querySelector('.header');

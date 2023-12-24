@@ -2,6 +2,17 @@
 
     .testimonial_area {
         .testimonial {
+            .owl-stage-outer {
+                width: 100%;
+
+
+            }
+
+            .owl-nav,
+            .owl-dots {
+                display: none;
+            }
+
             .title_box {
                 text-align: center;
                 padding-bottom: 15px;
@@ -12,12 +23,17 @@
 
                 .single_testimonial {
                     margin-top: 20px;
+                    text-align: center;
+                    display: flex !important;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
 
                     p {
-                        background-color: var(--light2);
-                        color: var(--light2);
+                        color: var(--dark);
                         padding: 10px;
                         margin-bottom: 20px;
+                        width: 85%;
                     }
 
                     .person {
