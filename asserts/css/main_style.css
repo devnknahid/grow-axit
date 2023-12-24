@@ -175,17 +175,24 @@ p {
 
 /*header_area start*/
 .main_area .header_area #showNav {
+  visibility: hidden;
+  opacity: 0;
   position: fixed;
   width: 50px;
   height: 35px;
   z-index: 999;
   left: 0;
-  top: 0;
+  top: 5px;
   background-color: var(--primary);
+  transition: 0.3s;
 }
 .main_area .header_area #showNav span {
   color: var(--light);
   font-size: 20px;
+}
+.main_area .header_area .activeShowNav {
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 .main_area .header_area .activeheader {
   position: fixed;
@@ -193,13 +200,22 @@ p {
   width: 100%;
   z-index: 999;
 }
-.main_area .header_area .header {
+.main_area .header_area .activeHeader {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.main_area .header_area .fixd {
   position: fixed;
   left: 0;
-  top: 40px;
+  top: 50px;
   width: 70px;
   z-index: 999;
   height: 65vh;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.main_area .header_area .header {
   color: var(--light);
   background-color: var(--primary);
 }

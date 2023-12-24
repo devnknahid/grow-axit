@@ -3,6 +3,7 @@ const mainArea = document.querySelector('.main_area');
 const header = document.querySelector('.header');
 const mode = document.querySelector('.mode');
 const dark = document.getElementById('dark');
+const showNav = document.getElementById('showNav');
 dark.addEventListener('click', () => {
    if (mode.classList.toggle('dark')) {
       dark.setAttribute('class', 'fas fa-moon');
@@ -32,6 +33,14 @@ window.addEventListener('scroll', () => {
 
 });
 
-if (window.innerWidth <= 768) {
-
+if (window.innerWidth < 992) {
+   showNav.classList.add('activeShowNav');
+   header.classList.add('fixd');
+   showNav.addEventListener('click', () => {
+      if (showNav.classList.toggle('navClick')) {
+         header.classList.remove('activeHeader');
+      } else {
+         header.classList.add('activeHeader');
+      }
+   });
 }
