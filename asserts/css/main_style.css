@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 14px;
   font-family: "Poppins", sans-serif, "roboto", "lato" !important;
@@ -25,6 +29,13 @@ body {
   --dark: #55394C;
   --primary: #EA663F;
   --secondary: #E5A058;
+}
+
+dl,
+ol,
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 .container {
@@ -161,6 +172,12 @@ p {
 }
 
 /*header_area start*/
+.main_area .header_area .activeheader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
 .main_area .header_area .header {
   color: var(--light);
   background-color: var(--dark);
@@ -169,8 +186,13 @@ p {
   color: var(--light);
   font-size: 20px;
 }
+.main_area .header_area .header .menu {
+  width: 400px;
+}
 .main_area .header_area .header .menu .ul li {
-  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main_area .header_area .header .menu .ul li a {
   text-transform: capitalize;
@@ -179,6 +201,15 @@ p {
 }
 .main_area .header_area .header .menu .ul li a:hover {
   color: var(--light);
+}
+.main_area .header_area .header .menu .ul #mode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+.main_area .header_area .header .menu .ul #mode .darkSpan {
+  cursor: pointer;
 }
 
 /*header_area end*/
@@ -692,6 +723,31 @@ p {
 }
 .footer_area .footer p span {
   text-transform: capitalize;
+}
+
+.goTop {
+  opacity: 0;
+  visibility: hidden;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: black;
+  cursor: pointer;
+  position: fixed;
+  right: 0;
+  transition: 0.4s;
+  bottom: 50px;
+  z-index: 999;
+}
+.goTop .top {
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+}
+
+.activeTop {
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 /*footer_area end*/

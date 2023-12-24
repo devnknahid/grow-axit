@@ -1,5 +1,12 @@
 .main_area {
     .header_area {
+        .activeheader {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+        }
+
         .header {
             color: var(--light);
             background-color: var(--dark);
@@ -14,9 +21,13 @@
             }
 
             .menu {
+                width: 400px;
+
                 .ul {
                     li {
-                        margin-left: 15px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
 
                         a {
                             text-transform: capitalize;
@@ -26,6 +37,17 @@
                             &:hover {
                                 color: var(--light);
                             }
+                        }
+                    }
+
+                    #mode {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: auto;
+
+                        .darkSpan {
+                            cursor: pointer;
                         }
                     }
                 }

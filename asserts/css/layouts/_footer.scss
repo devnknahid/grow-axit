@@ -39,3 +39,30 @@
         }
     }
 }
+
+.goTop {   
+    opacity: 0;
+    visibility: hidden;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+    position: fixed;
+    right: 0;
+    transition: 0.4s;
+    bottom: 50px;
+    z-index: 999;
+
+    .top {
+        text-transform: capitalize;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.activeTop {
+    visibility: visible !important;
+    opacity: 1 !important;
+
+}

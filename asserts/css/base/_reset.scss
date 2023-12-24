@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     font-size: 14px;
     font-family: 'Poppins', sans-serif, 'roboto', 'lato' !important;
@@ -23,6 +28,13 @@ body {
     --dark: #55394C;
     --primary: #EA663F;
     --secondary: #E5A058;
+}
+
+dl,
+ol,
+ul {
+    padding: 0;
+    margin: 0;
 }
 
 .container {
